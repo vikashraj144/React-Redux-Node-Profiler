@@ -1,26 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
+import './App.css';
+import Home from './components/Home';
+import PageNotFound from './components/PageNotFound';
+import {Row, Col} from 'react-bootstrap';
+import Footer from './components/layout/Footer';
+import About from './components/About';
+import Header from './components/layout/Header';
+
+const rightContainer = {
+  color: 'red',
+  border: '2px solid pink'
+};
+const rowHeight = {
+  height: '530px',
+}
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <Header></Header>
+            <Row style={rowHeight}>
+              <Col xs={12} style={rightContainer}>
+                  <Switch>
+                      <Route path='/' component={Home} exact/>
+                      <Route path='/about' component={About} exact/>
+                      <Route path='/404Error' component={PageNotFound} />
+                  </Switch>
+              </Col>
+            </Row>
+          <Footer/>
+        </div>
+      </Router>
     );
   }
 }
