@@ -12,6 +12,7 @@ const Header = () => {
 
     const links = [
         {name: 'About', url: '/about'},
+        {name: 'Experience', url: '/experience'},
         {name: '404 Error', url: '/404Error'},
 
     ];
@@ -28,13 +29,13 @@ const Header = () => {
     return (
         <div className='span4'>
             <Navbar color="light" light expand="md">
-            <NavbarBrand href="/">reactstrap</NavbarBrand>
+                    <NavLink className={'navLink'} activeClassName={'activeNavLink'} to='/' exact>Profiler</NavLink>                
             <NavbarToggler  />
             <Collapse navbar>
                 <Nav className="ml-auto" navbar>
-                <NavItem>
+                {/* <NavItem>
                     <NavLink className={'navLink'} activeClassName={'activeNavLink'} to='/' exact>Home</NavLink>                
-                </NavItem>
+                </NavItem> */}
                     {linksComponents}
                 </Nav>
             </Collapse>
