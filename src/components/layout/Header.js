@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Collapse, Nav, Navbar, NavbarToggler } from "reactstrap";
 const Header = () => {
   const links = [
     { name: "About", url: "/about" },
@@ -25,7 +24,8 @@ const Header = () => {
 
   return (
     <div className="span4">
-      <Navbar color="light" light expand="md">
+      Header
+      {/* <Navbar color="light" light expand="md">
         <NavLink
           className={"navLink"}
           activeClassName={"activeNavLink"}
@@ -37,13 +37,10 @@ const Header = () => {
         <NavbarToggler />
         <Collapse navbar>
           <Nav className="ml-auto" navbar>
-            {/* <NavItem>
-                    <NavLink className={'navLink'} activeClassName={'activeNavLink'} to='/' exact>Home</NavLink>                
-                </NavItem> */}
             {linksComponents}
           </Nav>
         </Collapse>
-      </Navbar>
+      </Navbar> */}
     </div>
   );
 };
