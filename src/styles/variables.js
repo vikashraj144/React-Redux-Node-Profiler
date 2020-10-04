@@ -3,6 +3,8 @@ export const colors = {
   primaryHover: "#063F5E",
   main: "#5f4f3d",
   blue: "#009ADC",
+  white: "#fff",
+  black: "#000000",
   lightBlue: "#0076B3",
 };
 
@@ -19,7 +21,6 @@ export const fontSizes = {
 export const fontFamilies = {
   signPainter: `"SignPainter-HouseScript", sans-serif`,
   frontage: `"FrontageCondensed-Inline", sans-serif`,
-  poppins: `'Poppins', sans-serif`,
   lato: `'Lato', sans-serif`,
 };
 
