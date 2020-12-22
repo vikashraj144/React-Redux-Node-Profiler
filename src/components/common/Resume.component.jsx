@@ -12,7 +12,7 @@ import ComponentLayout from "../layout/Component.layout";
 const Resume = () => {
   return (
     <ComponentLayout>
-      <h3>Resume</h3>
+      <h2 style={{ textAlign: "center" }}>Education</h2>
       <Timeline align="alternate">
         <TimelineItem>
           <TimelineOppositeContent>
