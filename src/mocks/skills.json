@@ -1,0 +1,74 @@
+[
+  {
+    "skill": "Angular",
+    "version": "2,4,5,6,7",
+    "lastUsed": "",
+    "experience": "2"
+  },
+  {
+    "skill": "React",
+    "version": "16",
+    "lastUsed": "",
+    "experience": "1"
+  },
+  {
+    "skill": "Redux",
+    "version": "4",
+    "lastUsed": "",
+    "experience": "1"
+  },
+  {
+    "skill": "Node",
+    "version": "6,8,10",
+    "lastUsed": "",
+    "experience": "3"
+  },
+  {
+    "skill": "PHP",
+    "version": "",
+    "lastUsed": "",
+    "experience": "3"
+  },
+  {
+    "skill": "HTML",
+    "version": "",
+    "lastUsed": "",
+    "experience": ""
+  },
+  {
+    "skill": "CSS",
+    "version": "",
+    "lastUsed": "",
+    "experience": ""
+  },
+  {
+    "skill": "Javascript",
+    "version": "",
+    "lastUsed": "",
+    "experience": ""
+  },
+  {
+    "skill": "Git,Bitbucket,Gitlab",
+    "version": "",
+    "lastUsed": "",
+    "experience": ""
+  },
+  {
+    "skill": "Jquery",
+    "version": "",
+    "lastUsed": "",
+    "experience": ""
+  },
+  {
+    "skill": "Bootstrap 3,4",
+    "version": "3,4",
+    "lastUsed": "",
+    "experience": ""
+  },
+  {
+    "skill": "Material UI",
+    "version": "",
+    "lastUsed": "",
+    "experience": ""
+  }
+]
