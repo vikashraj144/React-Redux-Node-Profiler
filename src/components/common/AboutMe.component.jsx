@@ -46,7 +46,7 @@ const AboutMe = () => {
         <ListItem style={{ flexGrow: 3 }}>
           <h3>Who am i ?</h3>
           <h2 style={{ textAlign: "center" }}>Vikash Kumar Verma</h2>
-
+          Front-end Developer
           <p>
             Is ut graece delectus repudiare, in habeo labore electram cum.
             Iracundia percipitur et usu. Nonumes consequat vix et, mea inani
