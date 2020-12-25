@@ -1,3 +1,6 @@
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineConnector from "@material-ui/lab/TimelineConnector";
@@ -9,35 +12,85 @@ import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
 import React from "react";
 import ComponentLayout from "../layout/Component.layout";
 
+const useStyles = makeStyles({
+  root: {
+    minWidth: 275,
+  },
+  bullet: {
+    display: "inline-block",
+    margin: "0 2px",
+    transform: "scale(0.8)",
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+});
+
 const Resume = () => {
+  const classes = useStyles();
+
   return (
     <ComponentLayout>
       <h2 style={{ textAlign: "center" }}>Education</h2>
       <Timeline align="alternate">
         <TimelineItem>
           <TimelineOppositeContent>
-            <Typography color="textSecondary">Pepsico (Pepsi)</Typography>
-            <Typography color="textSecondary">Nov 2019 to Till now</Typography>
+            <Card>
+              <CardContent>
+                <Typography variant="h5" component="h2">
+                  Pepsico (Pepsi)
+                </Typography>
+                <Typography className={classes.pos} color="textSecondary">
+                  Nov 2019 to Till now
+                </Typography>
+                <Typography variant="body2" component="p">
+                  Working here as Lead Engineer.
+                  <br />
+                  {'"a benevolent smile"'}
+                </Typography>
+              </CardContent>
+            </Card>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography>Lead Engineer </Typography>
+            <Typography variant="h5" component="h2">
+              Lead Engineer
+            </Typography>
           </TimelineContent>
         </TimelineItem>
+
         <TimelineItem>
           <TimelineOppositeContent>
-            <Typography>Project Lead / Sr software developer</Typography>
+            <Typography variant="h5" component="h2">
+              Project Lead / Sr software developer
+            </Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography color="textSecondary">Bridging health care</Typography>
-            <Typography color="textSecondary">Nov 2016 to Aug 2017</Typography>
+            <Card>
+              <CardContent>
+                <Typography variant="h5" component="h2">
+                  Bridging health care
+                </Typography>
+                <Typography className={classes.pos} color="textSecondary">
+                  Nov 2016 to Aug 2017
+                </Typography>
+                <Typography variant="body2" component="p">
+                  Working here as Lead Engineer.
+                  <br />
+                  {'"a benevolent smile"'}
+                </Typography>
+              </CardContent>
+            </Card>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -52,12 +105,16 @@ const Resume = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography>Team Lead</Typography>
+            <Typography variant="h5" component="h2">
+              Team Lead
+            </Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent>
-            <Typography>Sr Software developer</Typography>
+            <Typography variant="h5" component="h2">
+              Sr Software developer
+            </Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
@@ -80,7 +137,9 @@ const Resume = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography>Software developer</Typography>
+            <Typography variant="h5" component="h2">
+              Software developer
+            </Typography>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
